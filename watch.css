@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 86px;
+    padding: 14px 74.67px 17px 164.84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background: #F9FAFE;
+    z-index: 10;
+}
+
+.header_logo{
+    /* width: 255.327px; */
+    height: 46.237px;
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo_heading{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logo_description{
+    font-size: 8px;
+}
+.heading_links{
+    display: flex;
+    align-items: center;
+}
+.nav_menu{
+    list-style-type: none;
+    display: flex;
+    gap: 35px;
+    margin-right: 40px;
+}
+
+.nav_menu>li{
+    color: #939393;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; 
+    text-transform: capitalize;
+}
+
+.design_you_watch_btn{
+    padding: 24px 22px 25px;
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; 
+    border-radius: 5px;
+    background: #735CFF;
+    border: none;
+    margin-right: 25px;
+}
+.user_info{
+    width: 65.334px;
+    height: 20px;
+}
+
+#hero_section{
+    min-height: 721px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: #F9FAFE;
+    background-image: url(./images/hero_section_bg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero_section_content{
+    width: 560px;
+    margin-left:  164.84px;
+    margin-top: 5.5px;
+}
+
+.hero_section_content>h1{
+    color: #000;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    margin-bottom: 25px;
+}
+
+.hero_section_content>p{
+    color: #939393;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.hero_section_social_medias{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    left: 59px;
+    top: 176px;
+}
+
+.hero_section_social_medias>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.hero_section_social_medias>ul>li, 
+.hero_section_social_medias>ul>li>img {
+    width: 33px;
+    height: 33px;
+}
+
+
+.hero_section_social_medias>p{
+    position: absolute;
+    bottom: -70px;
+    left: -64px;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 6.16px;
+    transform: rotate(-90deg);
+    width: 160px;
+}
+
+#features{
+    min-height: 769px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features_content{
+    width: 629px;
+    height: 620px;
+    background-image: url(./images/features_main_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.features_content>h1{
+    color: #000;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    text-align: center;
+}
+
+.feature_top_left{
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+    left: -152px;
+}
+
+.feature_top_left-content{
+    width: 143px;
+
+}
+.feature_top_left-content>h2{
+    color: #000;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; 
+    margin-bottom: 20px;
+}
+
+.feature_top_left-content>p{
+    color: #939393;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+.feature_top_left_pointer{
+    position: relative;
+    margin-top: 5.5px;
+}
+
+.circle{
+    position: absolute;
+    top: -16px;
+    left: -16px;
+}
+
+.feature_bottom_left{
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    position: absolute;
+    bottom: 80px;
+    left: -222px;
+}
+
+.feature_bottom_left-content{
+    width: 268px;
+}
+
+.feature_bottom_left-content>h2{
+    color: #000;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; 
+    margin-bottom: 20px;
+}
+
+.feature_bottom_left-content>p{
+    color: #939393;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.feature_bottom_left>img{
+    width: 122px;
+    height: 81px;
+    margin-top: 9px;
+}
+
+
+.feature_top_right{
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    position: absolute;
+    top: 160px;
+    right: -250px;
+}
+
+.feature_top_right-content{
+    width: 254px;
+    text-align-last: left;
+    margin-top: 11px;
+}
+
+.feature_top_right-content>h2{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; 
+    margin-bottom: 20px;
+}
+
+.feature_top_right-content>p{
+    color: #939393;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.feature_top_right>img{
+    width: 136px;
+    height: 81px;
+}
+
+
+#design_your_watch{
+    height: 506px;
+    background: #735CFF;
+}
+
+#design_your_watch .content{
+    width: 730px;
+    margin: auto;
+    text-align: center;
+}
+
+#design_your_watch .content>img{
+    position: relative;
+    top: -24px;
+    width: 88px;
+    height: 57px;
+    flex-shrink: 0;
+}
+
+
+#design_your_watch .content .design_steps_wrapper>h3{
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 56px 0px 61.45px;
+}
+
+#design_your_watch .content .design_steps_wrapper >button{
+    background: #000;
+}
+
+.design_steps{
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.design_steps .step>div, 
+.step_without_line>div{
+    width: 86px;
+    height: 86px;
+    background-image: url(./images/design_step_circle.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+}
+
+.step>p,
+.step_without_line>p{
+    margin-top: 18.45px;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 200% */
+}
+
+.step::after{
+    display: block;
+    content: "";
+    background: #FFF;
+    height: 1px;
+    width: 154px;
+    position: absolute;
+    top: 43px;
+    margin-left: 73px;
+}
