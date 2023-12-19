@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Orbitron', sans-serif;
+    transition: 1s;
 }
 
 header{
@@ -376,4 +377,169 @@ header{
     position: absolute;
     top: 43px;
     margin-left: 73px;
+}
+
+.m-0{
+    margin: 0;
+}
+
+#our_mission{
+    width: 100%;
+    min-height: 669px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.our_mission_bg{
+    width: 497px;
+    height: 669px;
+    flex-shrink: 0;
+    position: relative;
+    background-image: url(./images/our_mission_main_img.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our_mission_bg .gradient{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 107px;
+    height: 669px;
+    background: linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.our_mission_info{
+    min-width: 406px;
+    width: 100%;
+    max-width: calc(406px + 260px);
+}
+
+.our_mission_info>h1{
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.our_mission_info>p{
+    color: #DEDEDE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    margin-bottom: 30px;
+    width: 406px;
+}
+
+#our_mission .triangle{
+    position: absolute;
+    right: 0px;
+    top: -10px;
+}
+
+#our_mission .rectangle{
+    position: absolute;
+    left: 0px;
+    bottom: -34px;
+}
+
+#watches{
+    min-height: 500px;
+    width: 76.38%;
+    margin:  140px auto;
+}
+
+#watches>h3{
+    color: #000;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 37px;
+}
+
+.watches_sescription>p{
+    color: #939393;
+    font-family: 'Poppins', sans-serif;;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.watch_slider_wrapper{
+    margin-top: 40px;
+}
+
+.watch_slider{
+    list-style-type: none;
+    display: flex;
+    gap: 39.22px;
+    overflow: hidden;
+}
+
+.slide img:nth-child(1){
+    width: 333.78px;
+    height: 392.683px;
+    margin-bottom: 26.18px;
+}
+
+.slide p:nth-child(2){
+    color: #939393;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; 
+    margin-bottom: 23.14px;
+    text-align: center;
+}
+
+.slide p:nth-child(3){
+    color: #000;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    text-align: center;
+}
+
+.slide_controls{
+    margin-top: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#right, #left{
+    transition: 0.4s;
+}
+
+#right:hover{
+    transform: scale(1.1);
+}
+#right:active{
+    transform: scale(0.9);
+}
+
+#left{
+    transform: rotate(180deg);
+    margin-left: 137px;
+}
+
+#left:hover{
+    transform: rotate(180deg) scale(1.1);
+}
+
+#left:active{
+    transform: rotate(180deg) scale(0.9);
 }
