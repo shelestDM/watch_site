@@ -17,11 +17,10 @@ header{
     justify-content: space-between;
     position: fixed;
     background: #F9FAFE;
-    z-index: 10;
+    z-index: 200;
 }
 
 .header_logo{
-    /* width: 255.327px; */
     height: 46.237px;
     display: flex;
     gap: 3px;
@@ -55,6 +54,7 @@ header{
     font-weight: 400;
     line-height: 12px; 
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .design_you_watch_btn{
@@ -68,6 +68,12 @@ header{
     background: #735CFF;
     border: none;
     margin-right: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.design_you_watch_btn:hover{
+    transform: scale(1.1);
 }
 .user_info{
     width: 65.334px;
@@ -542,4 +548,171 @@ header{
 
 #left:active{
     transform: rotate(180deg) scale(0.9);
+}
+
+#about_us{
+    display: flex;
+    align-items: center;
+    gap: 110px;
+    margin: 220px 0px 170px 161px;
+}
+
+.about_us-info_wrapper{
+    width: 396px;
+}
+
+.about_us-info_wrapper>h4{
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    margin-bottom: 47px;
+}
+
+.about_us-info_wrapper>p{
+    color: #939393;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+}
+.about_us-video_wrapper{
+    width: 630px;
+    height: 398px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+}
+
+.about_us-video_wrapper .video{
+    width: 578px;
+    height: 342px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    opacity: 0.8;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(0deg, #725cffd1 0%, #725cffcb 100%), url('./images/about_us_video_poster.png') 50% / cover no-repeat ;
+}
+
+.radial_shadow{
+    width: 496px;
+    height: 378px;
+    flex-shrink: 0;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -100;
+    bottom: -81px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(106, 131, 168, 0.50) 0%, rgba(106, 131, 168, 0.00) 100%);
+}
+
+#sign_up{
+    min-height: 442px;
+    background: linear-gradient(0deg, #725cffb3 0%, #725cffb2 100%)
+    , url('./images/sign_up_bg.png') 50% / cover no-repeat ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 65px 0 34px;
+}
+
+#sign_up>h5{
+    width: 846px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+#sign_up>p{
+    width: 726px;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 38px;
+}
+
+.sign_up_form>input{
+    width: 319px;
+    height: 55px;
+    padding: 0px 29px;
+    border-radius: 5px;
+    background: #FFF;
+    color: #939393;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    border: 0px;
+    outline: 0px;
+}
+
+.sign_up_form>input:first-child{
+    margin-right: 19px;
+}
+
+.sign_up_form>button{
+    background-color: black;
+    width: 165px;
+    height: 55px;
+    display: block;
+    margin: 30px auto 22px;
+}
+
+#sign_up>a{
+    color: #FFF;
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; 
+}
+
+footer{
+    height: 249px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 89px;
+}
+
+footer>img{
+    width: 384.197px;
+    height: 47.593px;
+    flex-shrink: 0;
+    background-color: #000;
+}
+
+.footer_rights{
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+    background: #F9FAFE;
+    display: grid;
+    place-items: center;
+}
+
+.footer_rights>a{
+    text-decoration: none;
+    color: #939393;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
 }

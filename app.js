@@ -31,3 +31,5 @@ function TranslateSlides() {
     slide.style.transform = `translateX(calc( ${-count * 100}%))`;
   });
 }
+
+
